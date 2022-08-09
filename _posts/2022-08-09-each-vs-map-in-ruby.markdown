@@ -4,7 +4,7 @@ title:  "Each vs Map"
 date:   2022-08-09 16:20:41 -0300
 categories: coding ruby
 ---
-When I was begginig to study Ruby it was a little confusing for me to distinct 'each' and 'map'.
+When I was beginning to study Ruby it was a little confusing for me to distinct 'each' and 'map'.
 I even read articles about it more than one time.
 When I used them in diferente situations I could understand better, and I'd hope I can explain to 
 someone that is confused like I was.
@@ -55,6 +55,6 @@ puts name
 #=> [nil, "a", "n", nil, nil, "n", "a"]
 {% endhighlight %}
 
-**OBS: To use 'each' or 'map' to access each letter of string it's necessary to put '.chars' first!** 
+**Obs.: To use 'each' or 'map' to access each letter of string it's necessary to put '.chars' first!** 
 
 [Array documentation](https://ruby-doc.org/core-2.7.0/Array.html)
