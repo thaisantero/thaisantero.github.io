@@ -4,7 +4,7 @@ title:  "Each vs Map"
 date:   2022-08-09 16:20:41 -0300
 categories: coding ruby
 ---
-When I began to study Ruby, it was a little confusing for me to distinguish [`each`] and [`map`] . 
+When I began to study Ruby, it was a little confusing for me to distinguish [each] and [map] . 
 I even read articles about it more than one time. Using them in different situations helped me 
 understand better, and I’d hope I can explain them to someone that is confused as I was.
 
@@ -32,5 +32,5 @@ better to use `each`.
 
 [Array documentation](https://ruby-doc.org/core-2.7.0/Array.html)
 
-[`each`](https://ruby-doc.org/core-2.7.0/Array.html#method-i-each)
-[`map`](https://ruby-doc.org/core-2.7.0/Array.html#method-i-map)
+[each]:(https://ruby-doc.org/core-2.7.0/Array.html#method-i-each)
+[map]:(https://ruby-doc.org/core-2.7.0/Array.html#method-i-map)
