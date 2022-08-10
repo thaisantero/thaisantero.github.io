@@ -20,11 +20,11 @@
 
 title: What I learned
 email: thais.antero@gmail.com
-description: >- # I am Thais, a beginner developer. This is a blog with some things I learned while coding.
+description: >- # this means to ignore newlines until "baseurl:"
+I am Thais, a beginner developer. This is a blog with some things I learned while coding.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # https://thaisantero.github.io/
-linkdin_username: https://www.linkedin.com/in/thais-antero/
-github_username:  https://github.com/thaisantero
+github_username:  thaisantero
 
 # Build settings
 theme: minima
