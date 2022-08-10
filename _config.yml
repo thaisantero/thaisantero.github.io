@@ -21,7 +21,7 @@
 title: What I learned
 description: >- # this means to ignore newlines until "baseurl:"
   I am Thais, a beginner developer studying Ruby and Python.
-  This is a blog with some things I learn about while coding.
+  This is a blog with some things I learned about while coding.
 # baseurl: "" # the subpath of your site, e.g. /blog
 # url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  thaisantero
