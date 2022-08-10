@@ -19,11 +19,11 @@
 # in the templates via {{ site.myvariable }}.
 
 title: What I learned
-email: thais.antero@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-I am Thais, a beginner developer. This is a blog with some things I learned while coding.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # https://thaisantero.github.io/
+  I am Thais, a beginer developer studying Ruby and Python.
+  This is a blog with some things I learn about while coding.
+# baseurl: "" # the subpath of your site, e.g. /blog
+# url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  thaisantero
 
 # Build settings
