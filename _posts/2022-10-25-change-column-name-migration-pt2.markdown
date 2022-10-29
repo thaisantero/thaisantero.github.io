@@ -4,7 +4,7 @@ title:  "Change Column Name Migration - Part2"
 date:   2022-10-25 16:20:41 -0300
 categories: coding ruby
 ---
-In the article [Change-Column-Name-Migration-Part1]. I talked about creating two migrations
+In the article [Change-Column-Name-Migration-Part1] I talked about creating two migrations
 to rename a column name of a model.
 
 However, by studying and coding more, I learned that creating only one migration which renames it is possible. Which looks like this:
@@ -47,12 +47,12 @@ But, in this case, is best to use [change_table] that would look like this:
 {% highlight ruby %}
 class ChangeColumnsNames < ActiveRecord::Migration
  def change
- change_table :table_name do |t|
- t.rename :old_column1, :new_column1
- t.rename :old_column2, :new_column2
- ...
- end
- end
+    change_table :table_name do |t|
+      t.rename :old_column1, :new_column1
+      t.rename :old_column2, :new_column2
+      ...
+    end
+  end
 end
 {% endhighlight %}
 
