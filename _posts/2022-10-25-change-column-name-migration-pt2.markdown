@@ -28,7 +28,7 @@ So, in the end my migration looked like this:
 {% highlight ruby %}
 class ChangeColumnName < ActiveRecord::Migration
  def change
- rename_column :warehouses, :codi, :code
+  rename_column :warehouses, :codi, :code
  end
 end
 {% endhighlight %}
