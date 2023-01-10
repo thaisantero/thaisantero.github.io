@@ -21,7 +21,7 @@ You can write the same query using class methods like this:
 {% highlight ruby %}
 class TransportModel < ActiveRecord
  def self.active
- where(status: 'active')
+  where(status: 'active')
  end
 end
 {% endhighlight %}
