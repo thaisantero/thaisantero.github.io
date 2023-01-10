@@ -2,7 +2,7 @@
 layout: post
 title:  "Change Column Name Migration - Part1"
 date:   2022-09-16 16:20:41 -0300
-categories: coding ruby
+categories: coding rails
 ---
 One thing that I found very useful in Rails is when we are
 creating a migration in terminal we can write in a certain [pattern] that the migration have the right format when created. 

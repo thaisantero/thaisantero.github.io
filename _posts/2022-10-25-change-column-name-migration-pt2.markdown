@@ -2,7 +2,7 @@
 layout: post
 title:  "Change Column Name Migration - Part2"
 date:   2022-10-25 16:20:41 -0300
-categories: coding ruby
+categories: coding rails
 ---
 In the article [Change-Column-Name-Migration-Part1] I talked about creating two migrations
 to rename a column name of a model.
