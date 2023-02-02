@@ -1,18 +1,17 @@
 ---
 layout: post
-title:  "Validations in PORO"
+title:  "Using ActiveModel validations in PORO"
 date:   2023-02-02 10:00:00 -0300
 categories: coding rails
 ---
 
-I was doing a project that returns the IMC value through an API endpoint. 
-So I had the pure ruby class IMC, and I wanted to validate the parameters
-sent via API. But, how it was a PORO didn't have the `ActiveRecord` inheritance.
+I was doing a project calculating the BMI value through an API endpoint. 
+For that, I created a plain ruby class BMI and wanted to validate the parameters sent via API.
 
-Then I found a simple way to validate: using [`ActiveModel::Validations`]. 
-[Here] is the article that I read to use it. 
+Then I found a simple way to validate using [`ActiveModel::Validations`]. 
+[Here] is the article that I read to implement it. 
 
-To do this you have to first add the `ActiveModel` to your `Gemfile`. Like this:
+To do this you have to first add the `activemodel` gem to your `Gemfile`. Like this:
 
 {% highlight ruby %}
 gem "activemodel", require: "active_model"
@@ -28,7 +27,7 @@ After this you include the `ActiveModel::Validations` module in your ruby class.
 Like I did in my API project:
 
 {% highlight ruby %}
-class Imc
+class Bmi
   include ActiveModel::Validations
 
   attr_reader :height, :weight
@@ -43,7 +42,7 @@ class Imc
 So, I could include the validations that I wanted, like this:
 
 {% highlight ruby %}
-class Imc
+class Bmi
   include ActiveModel::Validations
 
   attr_reader :height, :weight
@@ -58,7 +57,9 @@ class Imc
   end
 {% endhighlight %}
 
-The project repo that I used this is: [thaisantero/imc-calculator]
+The project repo that I used this: [thaisantero/imc-calculator]
+
+Stay tuned, in the next post I will talk about how to add I18n translations to your validations errors in PORO.
 
 [Here]: https://www.twilio.com/blog/2017/06/validate-ruby-objects-with-active-model-validations.html
 [`ActiveModel::Validations`]: https://edgeapi.rubyonrails.org/classes/ActiveModel/Validations.html
