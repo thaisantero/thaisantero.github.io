@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Using ActiveModel translation with i18n in PORO"
-date:   2023-02-02 10:00:00 -0300
+date:   2023-02-13 10:00:00 -0300
 categories: coding rails
 ---
 
