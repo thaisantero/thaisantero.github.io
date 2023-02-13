@@ -41,3 +41,4 @@ The project repo that I used this: [thaisantero/imc-calculator]
 
 [`ActiveModel::Translation`]: https://api.rubyonrails.org/classes/ActiveModel/Translation.html
 [translation using `ActiveRecord`]: https://guides.rubyonrails.org/i18n.html#translations-for-active-record-models
+[thaisantero/imc-calculator]: https://github.com/thaisantero/imc-calculator
