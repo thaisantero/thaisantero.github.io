@@ -36,6 +36,27 @@ pt-BR:
 This configuration is very similar to the [translation using `ActiveRecord`], 
 replacing the name `activerecord` with `activemodel`.
 
+So, for example, if you post the following parameters:
+
+{% highlight ruby %}
+params = {
+  height: 0,
+  weight: 76
+}
+{% endhighlight %}
+
+The json response will be:
+
+{% highlight ruby %}
+{
+  "errors": [
+    "Altura deve ser maior que 0"
+  ]
+}
+{% endhighlight %}
+
+With the BMI attribute translated.
+
 [`ActiveModel::Translation`]: https://api.rubyonrails.org/classes/ActiveModel/Translation.html
 [translation using `ActiveRecord`]: https://guides.rubyonrails.org/i18n.html#translations-for-active-record-models
 [API project]: https://github.com/thaisantero/imc-calculator
