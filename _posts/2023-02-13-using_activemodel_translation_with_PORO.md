@@ -36,23 +36,18 @@ pt-BR:
 This configuration is very similar to the [translation using `ActiveRecord`], 
 replacing the name `activerecord` with `activemodel`.
 
-So, for example, if you post the following parameters:
+So, for example, if you create an instance object with the following parameters:
 
 {% highlight ruby %}
-params = {
-  height: 0,
-  weight: 76
-}
+bmi = Bmi.new(height: 0, weight: 76)
 {% endhighlight %}
 
-The json response will be:
+Validating the object the message error will be:
 
 {% highlight ruby %}
-{
-  "errors": [
-    "Altura deve ser maior que 0"
-  ]
-}
+bmi.valid? #=> false
+
+bmi.errors.full_messages #=> ["Altura deve ser maior que 0"]
 {% endhighlight %}
 
 With the BMI attribute translated.
